@@ -1,26 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  .portfolio-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  .portfolio-item h2 {
+    margin-top: 0;
+  }
+  .portfolio-item p {
+    margin-bottom: 10px;
+  }
+  button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #555;
+  }
+</style>
+</head>
 <body>
 
-<p>
-This paragraph
-contains a lot of lines
-in the source code,
-but the browser 
-ignores it.
-</p>
+<header>
+  <h1>My Portfolio</h1>
+</header>
 
-<p>
-This paragraph
-contains      a lot of spaces
-in the source     code,
-but the    browser 
-ignores it.
-</p>
+<div class="container">
+  <div class="portfolio-item">
+    <h2>Project 1: Interactive Web App</h2>
+    <p>This is a description of my first project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <button onclick="alert('This button is clicked!')">Click me</button>
+  </div>
 
-<p>
-The number of lines in a paragraph depends on the size of the browser window. If you resize the browser window, the number of lines in this paragraph will change.
-</p>
+  <div class="portfolio-item">
+    <h2>Project 2: Data Visualization</h2>
+    <p>This is a description of my second project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <button onclick="console.log('Button clicked!')">Click me</button>
+  </div>
+</div>
+
+<script>
+  // JavaScript code can go here
+  console.log('Portfolio loaded.');
+</script>
 
 </body>
 </html>
